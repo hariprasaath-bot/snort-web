@@ -8,13 +8,18 @@ import { Observable } from 'rxjs';
 export class UserService {
 
   private baseUrl = 'http://localhost:8083/';
+  
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient) {
+    const headers = new Headers();
+    headers.append('Access-Control-Allow-Headers', 'Content-Type');
+   }
 
 
   userReg(value: any): Observable<string> {  
-    return this.http.post(`${this.baseUrl}userregpost`, value, {responseType: 'text'}); 
+    return this.http.post(`${this.baseUrl}userregpost`, value, {responseType: 'text'}, ); 
   }
+
   userlogin(value: any): Observable<string> {  
     return this.http.post(`${this.baseUrl}userloginpost`, value, {responseType: 'text'} );  
   }

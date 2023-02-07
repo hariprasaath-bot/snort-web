@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RuleService } from '../rule.service';
+import { RuleService } from '../services/rule.service';
 
 @Component({
   selector: 'app-rulefetch',

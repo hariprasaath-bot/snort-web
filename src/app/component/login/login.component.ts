@@ -20,7 +20,7 @@ export class LoginComponent {
 
   login(){
     this.userservice.userlogin({"username": this.username,"password":this.password}
-    ).subscribe((response) => {                       
+    ).subscribe((response: string) => {                       
       console.log('response received')
       this.loginstatus = response;
       if(this.loginstatus == "success"){

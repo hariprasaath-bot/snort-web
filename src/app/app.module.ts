@@ -8,6 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { RulefetchComponent } from './rulefetch/rulefetch.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './component/login/login.component';
+import { HomeComponent } from './component/home/home.component';
+import { RulegenComponent } from './component/rulegen/rulegen.component';
 //import { UserComponent } from './user/user.component';
 
 @NgModule({
@@ -16,6 +18,8 @@ import { LoginComponent } from './component/login/login.component';
     RulefetchComponent,
     SignupComponent,
     LoginComponent,
+    HomeComponent,
+    RulegenComponent,
     
   ],
   imports: [

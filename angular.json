@@ -29,7 +29,9 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
               
             ],
-            "scripts": []
+            "scripts": [
+                "D:/front/snort-web/srcassets/rulescript.js"
+            ]
           },
           "configurations": {
             "production": {

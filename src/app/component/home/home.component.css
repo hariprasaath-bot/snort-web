@@ -1,0 +1,15 @@
+.rect1{
+    border-bottom: 100vh solid;
+	border-right: 35vh solid transparent;
+	height: 0;
+    width: 60%;   
+}
+.rect2{
+    border-bottom: 100vh solid;
+	border-right: 35vh solid transparent;
+	height: 0;
+    width: 60%;
+}
+svg polygon{
+    fill: brown
+}

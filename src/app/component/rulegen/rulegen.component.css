@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration:none;
+    list-style:none;
+    box-sizing: border-box;
+}
+body{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+nav{
+    background: rgb(50, 46, 46);
+    height: 80px;
+    width:100%;
+}
+section{
+    width: 100%;
+    min-height: 87vh ;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    background : rgb(37, 36, 36);
+
+}
+.container{
+    /*position: relative;*/
+    max-width: 700px;
+    width : 100%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 20px;
+    background :white;
+}
+.zoom {
+    transition: transform .2s;
+    /* Animation */
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    color: black;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+label.logo{
+    color: hwb(44 2% 2%);
+    font-size:30px;
+    line-height: 80px;
+    font-weight:bold;
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height:  80px;
+    margin:0 5px;
+ }
+nav ul li a{
+    color:hwb(44 2% 2%);
+    font-size:13px;
+    padding:7px 13px;
+    border-radius:3px;
+    text-transform: uppercase ;
+}
+a.active,a:hover{
+    background: #000000;
+    transition: .5s;
+}
+#check:checked~ul{
+    left:0;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float : right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+
+}
+#check{
+    display:none;
+
+}
+@media (max-width:1500px){
+    label.logo{
+        font-size:30px;
+        pading-left:50px;
+
+        }
+    nav ul li a{
+    font-size: 15px;
+    }
+}
+@media (max-width:1350px){
+    label.logo{
+        font-size:20px;
+        pading-left:50px;
+
+        }
+    nav ul li a{
+    font-size: 15px;
+    }
+}
+@media (max-width:1200px){
+    .checkbtn{
+        display: block;
+    }
+   nav{
+        position: fixed;
+   }
+    ul{
+        position : fixed;
+        width:100%;
+        height:100%;
+        background:#88807B;
+        left :-100%;
+        text-align:center;
+        transition : all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin:50px 0;
+        line-height: 50px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background : black ;
+        color: hwb(44 2% 2%);
+
+    }
+    #check:checked~ul{
+    left : 0;
+
+    }
+}
+nav ul li p{
+    color:hwb(44 2% 2%);
+    font-size:13px;
+    text-transform: uppercase ;
+}
+/*
+
+form label{
+    color: black;
+    width:200px;
+    display: inline-block;
+}
+.savebtn{
+    margin-top: 50px;
+        float:right;
+}
+.alert{
+     margin-top: 50px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: red;
+     font-size: 25px;
+}*/
+
+.container form.one{
+    /*position: relative;*/
+    margin-top:16px;
+    min-height:300px;
+
+}
+.container form .fields{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100%/3 -15px);
+    flex-direction: column;
+    margin: 4px 0;
+
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 400;
+    color:black
+}
+.input-field input{
+    outline: none;
+    font-size:14px;
+    font-weight: 400;
+    border-radius:5px;
+    border: 1px solid ;
+    padding: 0 15px;
+    height: 42px;
+    width : 175px;
+    margin:8px 0;
+}
+.input-field select {
+    outline: none;
+    font-size:14px;
+    font-weight: 400;
+    border-radius:5px;
+    border: 1px solid ;
+    padding: 0 15px;
+    height: 42px;
+    width : 175px;
+    margin:8px 0;
+}
+
+
+/*
+*{
+    padding: 0;
+    margin:0; 
+    text-decoration:none;
+    list-style:none; 
+    box-sizing: border-box;
+}
+body{
+     font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+nav{
+    background: rgb(50, 46, 46);
+    height: 80px;
+    width:100%;
+}
+section{
+    width: 100%;
+    min-height: 100vh ;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #88807B
+}
+.container{
+    position: relative;
+    max-width: 1000px;
+    width : 100;
+     border-radius: 6px;
+     padding: 30px;
+     background-color: #88807B;
+     font-color:white;
+}
+.zoom {
+    transition: transform .2s;
+    /* Animation """""""
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+    color: black;
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) """"""
+}
+label.logo{
+    color: hwb(44 2% 2%);
+    font-size:30px;
+    line-height: 80px;
+    font-weight:bold;
+}
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height:  80px;
+    margin:0 5px;
+ }
+nav ul li a{
+    color:hwb(44 2% 2%);
+    font-size:13px;
+    padding:7px 13px;
+    border-radius:3px;
+    text-transform: uppercase ;
+}
+a.active,a:hover{
+    background: #000000;
+    transition: .5s;
+}
+#check:checked~ul{
+    left:0;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float : right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+
+}
+#check{
+    display:none;
+
+}
+@media (max-width:1500px){
+    label.logo{
+        font-size:30px;
+        pading-left:50px;
+
+        }
+    nav ul li a{
+    font-size: 15px;
+    }
+}
+@media (max-width:1350px){
+    label.logo{
+        font-size:20px;
+        pading-left:50px;
+
+        }
+    nav ul li a{
+    font-size: 15px;
+    }
+}
+@media (max-width:1200px){
+    .checkbtn{
+        display: block;
+    }
+   nav{
+        position: fixed;
+   }
+    ul{
+        position : fixed;
+        width:100%;
+        height:100%;
+        background:#88807B;
+        left :-100%;
+        text-align:center;
+        transition : all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin:50px 0;
+        line-height: 50px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background:none;
+        color: hwb(44 2% 2%);
+
+    }
+    #check:checked~ul{
+    left : 0;
+
+    }
+}
+nav ul li p{
+    color:hwb(44 2% 2%);
+    font-size:13px;
+    text-transform: uppercase ;
+}
+/*
+
+form label{
+    color: black;
+    width:200px;
+    display: inline-block;
+}
+.savebtn{
+    margin-top: 50px;
+        float:right;
+}
+.alert{
+     margin-top: 50px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     color: red;
+     font-size: 25px;
+}*/
+

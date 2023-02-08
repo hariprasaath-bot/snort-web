@@ -11,7 +11,8 @@ export class RuleService {
   
   constructor(private http:HttpClient) { }
   
-  fetchRule(value: any): Observable<Object> {  
-    return this.http.post(`${this.baseUrl}fetchrule`, value);  
+  
+  fetchRule(value: any): Observable<any> {  
+    return this.http.post(`${this.baseUrl}fetchrule`, value,);  
   }  
 }

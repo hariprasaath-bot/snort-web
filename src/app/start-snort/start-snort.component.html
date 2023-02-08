@@ -1,0 +1,28 @@
+<div class = "container-fluid" style ="width: 50%;">
+    <h1>Select Parameters</h1>
+    <form #userForm="ngForm">
+        <div class ="form-group mb-3">
+            <label>Mode:</label>
+            <select class = "form-select" name="modes" [(ngModel)]="startModel.mode"> 
+              <option *ngFor = 'let mode of Modes'>{{mode}}</option>
+            </select>
+        </div>
+
+        <div class ="form-group mb-3">
+            <label>Log Mode:</label>
+            <select class = "form-select" name="logMode" [(ngModel)]="startModel.logMode">              
+              <option>Alert To Web</option>
+              <option>Alert To Console</option>
+            </select>
+        </div>
+
+        <div class ="form-group mb-3">
+            <label>Interface:</label>
+            <select class = "form-select" name="inface" [(ngModel)]="startModel.inface">              
+              <option *ngFor="let inface of infaces" >{{inface}}</option>
+            </select>
+        </div>
+      
+      <button class = "btn btn-primary" type ="submit" (click) = 'startSnort()'>Start Snort</button>
+    </form>
+  </div>

@@ -21,7 +21,7 @@ export class LoginComponent {
   login(){
     this.userservice.userlogin({"username": this.username,"password":this.password}
     ).subscribe((response) => {                       
-      console.log('response received')
+      console.log('response received');
       this.loginstatus = response;
       if(this.loginstatus == "success"){
           this.gotoHome();
@@ -32,7 +32,7 @@ export class LoginComponent {
   }
 
   gotoHome(){
-    this.router.navigate(['/details']);
+    this.router.navigate(['/startSnort',]);
   }
   gotoRegis(){
     this.router.navigate(['/userreg'])

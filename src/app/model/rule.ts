@@ -1,4 +1,6 @@
 export class Rule {
+
+  
   private _sid!: BigInteger;
   public get sid(): BigInteger {
     return this._sid;
@@ -6,6 +8,7 @@ export class Rule {
   public set sid(value: BigInteger) {
     this._sid = value;
   }
+
   private _protocol!: string;
   public get protocol(): string {
     return this._protocol;
@@ -13,6 +16,7 @@ export class Rule {
   public set protocol(value: string) {
     this._protocol = value;
   }
+
   private _srcip!: string;
   public get srcip(): string {
     return this._srcip;
@@ -27,6 +31,7 @@ export class Rule {
   public set src_port(value: string) {
     this._src_port = value;
   }
+
   private _dst_ip!: string;
   public get dst_ip(): string {
     return this._dst_ip;
@@ -34,6 +39,7 @@ export class Rule {
   public set dst_ip(value: string) {
     this._dst_ip = value;
   }
+
   private _dst_port!: string;
   public get dst_port(): string {
     return this._dst_port;
@@ -41,6 +47,7 @@ export class Rule {
   public set dst_port(value: string) {
     this._dst_port = value;
   }
+
   private _message!: string;
   public get message(): string {
     return this._message;
@@ -48,6 +55,7 @@ export class Rule {
   public set message(value: string) {
     this._message = value;
   }
+
   private _num_pkts!: string;
   public get num_pkts(): string {
     return this._num_pkts;
@@ -55,6 +63,7 @@ export class Rule {
   public set num_pkts(value: string) {
     this._num_pkts = value;
   }
+
   private _user!: string;
   public get user(): string {
     return this._user;

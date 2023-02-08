@@ -30,7 +30,7 @@
               
             ],
             "scripts": [
-                "D:/front/snort-web/srcassets/rulescript.js"
+                "src/assets/rulescript.js"
             ]
           },
           "configurations": {

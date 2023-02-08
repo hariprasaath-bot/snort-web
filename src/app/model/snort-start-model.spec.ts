@@ -1,7 +1,7 @@
-import { SnortStartModel } from './snort-start-model';
+import { snortStartModel } from './snort-start-model';
 
 describe('SnortStartModel', () => {
   it('should create an instance', () => {
-    expect(new SnortStartModel()).toBeTruthy();
+    expect(new snortStartModel()).toBeTruthy();
   });
 });

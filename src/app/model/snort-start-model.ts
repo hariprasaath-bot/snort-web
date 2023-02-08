@@ -1,6 +1,6 @@
-export class SnortStartModel { 
+export class snortStartModel { 
     constructor(
-        public mode:string,
+        public snortMode:string,
         public logMode:string,
         public inface:string,
         

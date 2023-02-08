@@ -10,6 +10,9 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './component/login/login.component';
 import { HomeComponent } from './component/home/home.component';
 import { RulegenComponent } from './component/rulegen/rulegen.component';
+
+import { Rule } from './model/rule';
+import { MatTableModule } from '@angular/material/table';
 //import { UserComponent } from './user/user.component';
 
 @NgModule({
@@ -26,9 +29,10 @@ import { RulegenComponent } from './component/rulegen/rulegen.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
   ],
-  providers: [],
+  providers: [Rule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

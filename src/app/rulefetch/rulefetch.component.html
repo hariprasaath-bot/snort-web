@@ -1,5 +1,4 @@
 
-<section id="cover" class="min-vh-100">
     <div id="cover-caption">
         <div class="container">
             <div class="row text-white">
@@ -8,7 +7,7 @@
                         <form (ngSubmit)="onSubmit()" class="justify-content-center">
                             <div class="form-group">
                                 <label class="sr-only">search query </label>
-                                <input type="text" class="form-control" placeholder="rule search" [(ngModel)]="searchterm" name="name">
+                                <input type="text" class="form-control" placeholder="rule search" id="search term" [(ngModel)]="searchterm" name="name">
                             </div>
                             <button type="submit" style="margin-top:20px" class="btn btn-primary btn-lg">search</button>
                         </form>
@@ -17,4 +16,65 @@
             </div>
         </div>
     </div>
-    </section>
+    <!-- <h1>{{ruleobjs}}</h1> -->
+    <div style="max-height: 400px; overflow-y: scroll;">
+        <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>sid</th>
+                <th>protocol</th>
+                <th>srcip</th>
+                <th>src_port</th>
+                <th>dst_ip</th>
+                <th>dst_port</th>
+                <th>message</th>
+                <th>num_pkts</th>
+                <th>user</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let ruleobj of ruleobjs">
+                <td>{{ ruleobj?.sid }}</td>
+                <td>{{ ruleobj.protocol }}</td>
+                <td>{{ ruleobj.srcip }}</td>
+                <td>{{ ruleobj.src_port }}</td>
+                <td>{{ ruleobj.dst_ip }}</td>
+                <td>{{ ruleobj.dst_port }}</td>
+                <td>{{ ruleobj.message }}</td>
+                <td>{{ ruleobj.num_pkts }}</td>
+                <td>{{ ruleobj.user }}</td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </div>
+      
+      <!-- <table>
+      <thead>
+        <tr>
+          <th>sid</th>
+          <th>protocol</th>
+          <th>srcip</th>
+          <th>src_port</th>
+          <th>dst_ip</th>
+          <th>dst_port</th>
+          <th>message</th>
+          <th>num_pkts</th>
+          <th>user</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ruleobj of ruleobjs">
+          <td>{{ ruleobj.sid }}</td>
+          <td>{{ ruleobj.protocol }}</td>
+          <td>{{ ruleobj.srcip }}</td>
+          <td>{{ ruleobj.src_port }}</td>
+          <td>{{ ruleobj.dst_ip }}</td>
+          <td>{{ ruleobj.dst_port }}</td>
+          <td>{{ ruleobj.message }}</td>
+          <td>{{ ruleobj.num_pkts }}</td>
+          <td>{{ ruleobj.user }}</td>
+        </tr>
+      </tbody>
+    </table>  -->
+  

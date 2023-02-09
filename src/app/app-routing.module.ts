@@ -8,6 +8,7 @@ import { StartSnortComponent } from './start-snort/start-snort.component';
 
 import { RulegenComponent } from './component/rulegen/rulegen.component';
 import {HomeComponent} from './component/home/home.component';
+import { AdminComponent } from './component/admin/admin.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: "gen", component: RulegenComponent },
   {path: "home", component: HomeComponent},
   {path: "startSnort",component: StartSnortComponent },
+  {path: "admin",component: AdminComponent },
 ];
 
 @NgModule({

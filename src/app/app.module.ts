@@ -15,6 +15,7 @@ import { RulegenComponent } from './component/rulegen/rulegen.component';
 
 import { Rule } from './model/rule';
 import { MatTableModule } from '@angular/material/table';
+import { AdminComponent } from './component/admin/admin.component';
 
 //import { UserComponent } from './user/user.component';
 
@@ -27,6 +28,7 @@ import { MatTableModule } from '@angular/material/table';
     StartSnortComponent,
     HomeComponent,
     RulegenComponent,
+    AdminComponent,
     
   ],
   imports: [

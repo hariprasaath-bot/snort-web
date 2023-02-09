@@ -23,5 +23,13 @@ export class UserService {
   userlogin(value: any): Observable<string> {  
     return this.http.post(`${this.baseUrl}userloginpost`, value, {responseType: 'text'} );  
   }
+
+  userFetch(value: any): Observable<any> {  
+    return this.http.post(`${this.baseUrl}fetchuser`, value, ); 
+  }
+
+  userFindAll(): Observable<any>{
+    return this.http.post(`${this.baseUrl}viewall`,"");
+  }
   
 }

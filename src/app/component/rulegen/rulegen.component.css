@@ -15,22 +15,29 @@ nav{
     width:100%;
 }
 section{
+    background-image: url(src\assets\images\bgimage2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     width: 100%;
     min-height: 87vh ;
     display : flex;
     align-items: center;
     justify-content: center;
-    background : rgb(37, 36, 36);
-
 }
+
 .container{
     /*position: relative;*/
-    max-width: 700px;
+    background-image: url(src\assets\images\bgimage1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 80%;
     width : 100%;
     border-radius: 6px;
     padding: 30px;
     margin: 0 20px;
-    background :white;
+    margin-top: 80px;
 }
 .zoom {
     transition: transform .2s;
@@ -90,7 +97,7 @@ a.active,a:hover{
 @media (max-width:1500px){
     label.logo{
         font-size:30px;
-        pading-left:50px;
+        padding-left:50px;
 
         }
     nav ul li a{
@@ -100,7 +107,7 @@ a.active,a:hover{
 @media (max-width:1350px){
     label.logo{
         font-size:20px;
-        pading-left:50px;
+        padding-left:50px;
 
         }
     nav ul li a{
@@ -182,35 +189,35 @@ form label{
 form .fields .input-field{
     display: flex;
     width: calc(100%/3 -15px);
-    flex-direction: column;
+    flex-direction : column;
     margin: 4px 0;
 
 }
 .input-field label{
-    font-size: 12px;
-    font-weight: 400;
-    color:black
+    font-size: 16px;
+    font-weight: 600;
+    color: #fab905 ;
 }
 .input-field input{
     outline: none;
-    font-size:14px;
+    font-size:16px;
     font-weight: 400;
     border-radius:5px;
     border: 1px solid ;
     padding: 0 15px;
     height: 42px;
-    width : 175px;
+    width : 320px;
     margin:8px 0;
 }
 .input-field select {
     outline: none;
-    font-size:14px;
+    font-size:16px;
     font-weight: 400;
     border-radius:5px;
     border: 1px solid ;
     padding: 0 15px;
     height: 42px;
-    width : 175px;
+    width : 320px;
     margin:8px 0;
 }
 

@@ -1,4 +1,3 @@
-
 <nav>
     <input type = "checkbox" id = "check">
     <label for= "check" class = "checkbtn">
@@ -7,7 +6,7 @@
      <label class="logo"><a href="home"><img class='zoom' src="assets/images/snortlogo.jpg" align="left" width=150 height=80></a> SNORT RULE GENERATOR </label> 
      <ul>
          <!-- <li><p>${regname}</p></li> -->
-         <li><a href="rulegen">Generate snort rule</a></li>
+         <li><a href="gen">Generate snort rule</a></li>
          <li><a href='rulefetch'>View snort rule</a></li>
          <li><a href='snortstart'>starting snort</a></li>
      </ul>
@@ -39,7 +38,7 @@
                      <label for="direction">Direction: </label>
                          <select name = "direction" id="direction">
                          <option value="" >--Select the Direction--</option>
-                         <option value = "->">-></option>
+                         <option value = "&rarr;">&rarr;</option>
                          <option value = "<>"><></option>
                          </select>
                  </div>
@@ -72,8 +71,6 @@
                  <div class= "input-field" >
                          <input type="submit" value="Set Snort rule">
                      </div>
-
-
                  <div  class= "input-field">
                          <!-- <p>${generatedrule}</p> -->
                              <form action='repoSave' method="POST"> <input type='submit' value='Save to Database' class='savebtn'></form>
@@ -82,7 +79,6 @@
                          <!-- <p>${repoAckn}</p> -->
                          <form action="rulefile" method="POST"><input type="submit" value="Add rule to file"  class='savebtn'></form>
                  </div>
-         <!--style='margin-left:50px; padding: 10px;'-->
 
 
 

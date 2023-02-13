@@ -15,7 +15,7 @@ nav{
     width:100%;
 }
 section{
-    background-image: url(src\assets\images\bgimage2.jpg);
+    background-image: url(src\assets\images\bgimage1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -28,7 +28,7 @@ section{
 
 .container{
     /*position: relative;*/
-    background-image: url(src\assets\images\bgimage1.jpg);
+    background:transparent;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
